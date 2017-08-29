@@ -1,0 +1,69 @@
+<resources>
+    <!-- The General Texts of the App -->
+    <string name="app_name">NBA Quiz App</string>
+    <string name="quiz_entry_title">How much do you know about the NBA?</string>
+    <string name="quiz_entry_subtitle">Test your NBA knowledge with this Quiz!</string>
+
+    <!-- Question 1 -->
+    <string name="question_one_label">Question 1:</string>
+    <string name="question_one_title">Which team won in the 2017 NBA Finals?</string>
+    <string name="question_one_option_one">Cleveland Cavaliers</string>
+    <string name="question_one_option_two">Milwaukee Bucks</string>
+    <string name="question_one_option_three">Golden State Warriors</string>
+    <string name="question_one_option_four">Miami Heat</string>
+
+    <!-- Question 2 -->
+    <string name="question_two_label">Question 2:</string>
+    <string name="question_two_title">Which Team has won the most Championships in NBA History?</string>
+    <string name="question_two_option_one">Los Angeles Lakers</string>
+    <string name="question_two_option_two">Chicago Bulls</string>
+    <string name="question_two_option_three">San Antonio Spurs</string>
+    <string name="question_two_option_four">Boston Celtics</string>
+
+    <!-- Question 3 -->
+    <string name="question_three_label">Question 3: </string>
+    <string name="question_three_title">Who is called \"The King\" in the NBA?</string>
+    <string name="question_three_hint">Hint: Currently he plays for the Cavaliers</string>
+
+    <!-- Question 4 -->
+    <string name="question_four_label">Question 4: </string>
+    <string name="question_four_title">Which Teams below have won more than two NBA Championships?</string>
+    <string name="question_four_hint">Hint: Three of them have done it.</string>
+    <string name="question_four_option_one">Atlanta Hawks</string>
+    <string name="question_four_option_two">Portland Trail Blazers</string>
+    <string name="question_four_option_three">Cleveland Cavaliers</string>
+    <string name="question_four_option_four">Philadelphia 76ers</string>
+    <string name="question_four_option_five">San Antonio Spurs</string>
+    <string name="question_four_option_six">Detroit Pistons</string>
+
+    <!-- Question 5 -->
+    <string name="question_five_label">Question 5: </string>
+    <string name="question_five_title">Who is on top of the list: NBA: 3-point made All-Time leaders?</string>
+    <string name="question_five_option_one">Stephen Curry</string>
+    <string name="question_five_option_two">Jason Kid</string>
+    <string name="question_five_option_three">Ray Allen</string>
+    <string name="question_five_option_four">Kobe Bryant</string>
+
+    <!-- Question 6 -->
+    <string name="question_six_label">Question 6: </string>
+    <string name="question_six_title">Two of the players below are in the Top-5 in the list: NBA All Time Points Leader. Do you know who they are?</string>
+    <string name="question_six_option_one">Dominique Wilkins</string>
+    <string name="question_six_option_two">Paul Pierce</string>
+    <string name="question_six_option_three">Michael Jordan</string>
+    <string name="question_six_option_four">Kareem Abdul-Jabbar</string>
+    <string name="question_six_option_five">Tim Duncan</string>
+    <string name="question_six_option_six">Reggie Miller</string>
+
+    <!-- Get Your Score Button -->
+    <string name="button_score">Get Your Score</string>
+
+    <!-- Get Your Score Button -->
+    <string name="button_reset">Reset</string>
+
+    <!-- Toast Messages -->
+    <string name="submit_error_message">You must answer all the questions</string>
+
+    <!-- Desription for images -->
+    <string name="image_description">Basketball Image</string>
+
+</resources>

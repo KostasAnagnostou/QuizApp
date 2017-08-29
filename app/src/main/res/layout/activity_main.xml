@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Main Layout for NBA Quiz App-->
+    <LinearLayout
+        style="@style/QuizMainLayout"
+        tools:context="com.example.android.quizapp.MainActivity">
+
+        <!-- Nested Relative Layout for the Entry of the Quiz -->
+        <RelativeLayout style="@style/NestedRelativeLayout">
+
+            <!-- Quiz Entry Title -->
+            <TextView
+                android:id="@+id/entry_title"
+                style="@style/QuizEntryTitle"
+                android:text="@string/quiz_entry_title" />
+
+            <!-- Quiz BasketBall Image -->
+            <ImageView
+                android:id="@+id/image_basketball"
+                style="@style/QuizMainImage"
+                android:layout_below="@id/entry_title"
+                android:src="@drawable/basketball_small" />
+
+            <!-- Quiz Entry Subtitle -->
+            <TextView
+                style="@style/QuizEntrySubtitle"
+                android:layout_below="@+id/image_basketball"
+                android:text="@string/quiz_entry_subtitle" />
+
+        </RelativeLayout>
+
+        <View style="@style/ViewDarkLine" />
+
+        <!-- Question 1 Layout -->
+        <RelativeLayout style="@style/NestedRelativeLayout">
+
+            <!-- Question 1 Label -->
+            <TextView
+                android:id="@+id/question_one_label"
+                style="@style/QuestionLabel"
+                android:text="@string/question_one_label" />
+
+            <!-- Question 1 Title -->
+            <TextView
+                android:id="@+id/question_one_title"
+                style="@style/QuestionRedTitle"
+                android:layout_below="@+id/question_one_label"
+                android:text="@string/question_one_title" />
+
+            <!-- Question 1 Radio Group -->
+            <RadioGroup
+                android:id="@+id/radio_group_question_one"
+                style="@style/RadioGroupCenter"
+                android:layout_below="@+id/question_one_title">
+
+                <!-- Option 1 -->
+                <RadioButton
+                    android:id="@+id/question_one_option_one"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_one_option_one" />
+
+                <!-- Option 2 -->
+                <RadioButton
+                    android:id="@+id/question_one_option_two"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_one_option_two" />
+
+                <!-- Option 3 -->
+                <RadioButton
+                    android:id="@+id/question_one_option_three"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_one_option_three" />
+
+                <!-- Option 4 -->
+                <RadioButton
+                    android:id="@+id/question_one_option_four"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_one_option_four" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <View style="@style/ViewDarkLine" />
+
+        <!-- Question 2 Layout -->
+        <RelativeLayout style="@style/NestedRelativeLayout">
+
+            <!-- Question 2 Label -->
+            <TextView
+                android:id="@+id/question_two_label"
+                style="@style/QuestionLabel"
+                android:text="@string/question_two_label" />
+
+            <!-- Question 2 Title -->
+            <TextView
+                android:id="@+id/question_two_title"
+                style="@style/QuizEntrySubtitle"
+                android:layout_below="@+id/question_two_label"
+                android:text="@string/question_two_title" />
+
+            <!-- Question 2 Radio Group -->
+            <RadioGroup
+                android:id="@+id/radio_group_question_two"
+                style="@style/RadioGroupCenter"
+                android:layout_below="@+id/question_two_title">
+
+                <!-- Option 1 -->
+                <RadioButton
+                    android:id="@+id/question_two_option_one"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_two_option_one" />
+
+                <!-- Option 2 -->
+                <RadioButton
+                    android:id="@+id/question_two_option_two"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_two_option_two" />
+
+                <!-- Option 3 -->
+                <RadioButton
+                    android:id="@+id/question_two_option_three"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_two_option_three" />
+
+                <!-- Option 4 -->
+                <RadioButton
+                    android:id="@+id/question_two_option_four"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_two_option_four" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <View style="@style/ViewDarkLine" />
+
+        <!-- Question 3 Layout -->
+        <RelativeLayout style="@style/NestedRelativeLayout">
+
+            <!-- Question 3 Label -->
+            <TextView
+                android:id="@+id/question_three_label"
+                style="@style/QuestionLabel"
+                android:text="@string/question_three_label" />
+
+            <!-- Question 3 Title -->
+            <TextView
+                android:id="@+id/question_three_title"
+                style="@style/QuestionRedTitle"
+                android:layout_below="@+id/question_three_label"
+                android:text="@string/question_three_title" />
+
+            <EditText
+                android:id="@+id/question_three_input"
+                style="@style/EditTextQuestionThree"
+                android:layout_below="@id/question_three_title"
+                android:hint="@string/question_three_hint" />
+        </RelativeLayout>
+
+        <View style="@style/ViewDarkLine" />
+
+        <!-- Question 4 Layout -->
+        <RelativeLayout style="@style/NestedRelativeLayout">
+
+            <!-- Question 4 Label -->
+            <TextView
+                android:id="@+id/question_four_label"
+                style="@style/QuestionLabel"
+                android:text="@string/question_four_label" />
+
+            <!-- Question 4 Title -->
+            <TextView
+                android:id="@+id/question_four_title"
+                style="@style/QuizEntrySubtitle"
+                android:layout_below="@+id/question_four_label"
+                android:text="@string/question_four_title" />
+
+            <!-- Question 4 Checkboxes -->
+            <LinearLayout
+                android:id="@+id/checkboxes_layout"
+                style="@style/CheckBoxesLayout"
+                android:layout_below="@+id/question_four_title">
+
+                <!-- Option 1 -->
+                <CheckBox
+                    android:id="@+id/question_four_option_one"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_four_option_one" />
+
+                <!-- Option 2 -->
+                <CheckBox
+                    android:id="@+id/question_four_option_two"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_four_option_two" />
+
+                <!-- Option 3 -->
+                <CheckBox
+                    android:id="@+id/question_four_option_three"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_four_option_three" />
+            </LinearLayout>
+
+            <!-- Question 4 Checkboxes -->
+            <LinearLayout
+                style="@style/CheckBoxesLayout"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/question_four_title">
+
+                <!-- Option 4 -->
+                <CheckBox
+                    android:id="@+id/question_four_option_four"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_four_option_four" />
+
+                <!-- Option 5 -->
+                <CheckBox
+                    android:id="@+id/question_four_option_five"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_four_option_five" />
+
+                <!-- Option 6 -->
+                <CheckBox
+                    android:id="@+id/question_four_option_six"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_four_option_six" />
+            </LinearLayout>
+
+            <!-- Hint for Question 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/checkboxes_layout"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_eight"
+                android:text="@string/question_four_hint" />
+        </RelativeLayout>
+
+        <View style="@style/ViewDarkLine" />
+
+        <!-- Question 5 Layout -->
+        <RelativeLayout style="@style/NestedRelativeLayout">
+
+            <!-- Question 5 Label -->
+            <TextView
+                android:id="@+id/question_five_label"
+                style="@style/QuestionLabel"
+                android:text="@string/question_five_label" />
+
+            <!-- Question 5 Title -->
+            <TextView
+                android:id="@+id/question_five_title"
+                style="@style/QuestionRedTitle"
+                android:layout_below="@+id/question_five_label"
+                android:text="@string/question_five_title" />
+
+            <!-- Question 5 Radio Group -->
+            <RadioGroup
+                android:id="@+id/radio_group_question_five"
+                style="@style/RadioGroupCenter"
+                android:layout_below="@+id/question_five_title">
+
+                <!-- Option 1 -->
+                <RadioButton
+                    android:id="@+id/question_five_option_one"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_five_option_one" />
+
+                <!-- Option 2 -->
+                <RadioButton
+                    android:id="@+id/question_five_option_two"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_five_option_two" />
+
+                <!-- Option 3 -->
+                <RadioButton
+                    android:id="@+id/question_five_option_three"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_five_option_three" />
+
+                <!-- Option 4 -->
+                <RadioButton
+                    android:id="@+id/question_five_option_four"
+                    style="@style/RadioButtons"
+                    android:text="@string/question_five_option_four" />
+            </RadioGroup>
+
+            <!-- Image View Right -->
+            <ImageView
+                style="@style/ImageDunk"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/question_five_title"
+                android:src="@drawable/basketball_dunk" />
+
+            <!-- Image View Left -->
+            <ImageView
+                style="@style/ImageDunk"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/question_five_title"
+                android:src="@drawable/basketball_dunk_rotate" />
+        </RelativeLayout>
+
+        <View style="@style/ViewDarkLine" />
+
+        <!-- Question 6 Layout -->
+        <RelativeLayout style="@style/NestedRelativeLayout">
+
+            <!-- Question 6 Label -->
+            <TextView
+                android:id="@+id/question_six_label"
+                style="@style/QuestionLabel"
+                android:text="@string/question_six_label" />
+
+            <!-- Question 6 Title -->
+            <TextView
+                android:id="@+id/question_six_title"
+                style="@style/QuizEntrySubtitle"
+                android:layout_below="@+id/question_six_label"
+                android:text="@string/question_six_title" />
+
+            <!-- Question 6 Checkboxes -->
+            <LinearLayout
+                style="@style/CheckBoxesLayout"
+                android:layout_below="@+id/question_six_title">
+
+                <!-- Option 1 -->
+                <CheckBox
+                    android:id="@+id/question_six_option_one"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_six_option_one" />
+
+                <!-- Option 2 -->
+                <CheckBox
+                    android:id="@+id/question_six_option_two"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_six_option_two" />
+
+                <!-- Option 3 -->
+                <CheckBox
+                    android:id="@+id/question_six_option_three"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_six_option_three" />
+            </LinearLayout>
+
+            <!-- Question 6 Checkboxes -->
+            <LinearLayout
+                style="@style/CheckBoxesLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/question_six_title">
+
+                <!-- Option 4 -->
+                <CheckBox
+                    android:id="@+id/question_six_option_four"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_six_option_four" />
+
+                <!-- Option 5 -->
+                <CheckBox
+                    android:id="@+id/question_six_option_five"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_six_option_five" />
+
+                <!-- Option 6 -->
+                <CheckBox
+                    android:id="@+id/question_six_option_six"
+                    style="@style/CheckBoxes"
+                    android:text="@string/question_six_option_six" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Submit Button - Get your Score -->
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/ButtonScore"
+            android:text="@string/button_score" />
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/ButtonReset"
+            android:text="@string/button_reset" />
+
+    </LinearLayout>
+</ScrollView>

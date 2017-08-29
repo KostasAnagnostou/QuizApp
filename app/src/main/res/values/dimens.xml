@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Values for padding throughout the App -->
+    <dimen name="padding_sixteen">16dp</dimen>
+    <dimen name="padding_eight">8dp</dimen>
+
+
+</resources>
